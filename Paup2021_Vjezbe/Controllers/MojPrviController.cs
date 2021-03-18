@@ -37,10 +37,9 @@ namespace Paup2021_Vjezbe.Controllers
 
             return View();
         }
-        public ActionResult Ne_seri(string poruka)
+        public string TezakHelena()
         {
-            ViewBag.Poruka = poruka;
-            return View();
+            return "Tezak Helena";
         }
     }
 }
