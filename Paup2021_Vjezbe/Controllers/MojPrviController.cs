@@ -37,10 +37,11 @@ namespace Paup2021_Vjezbe.Controllers
 
             return View();
         }
-        public ActionResult Ne_seri(string poruka)
+        
+        public string VratiVrijeme()
         {
-            ViewBag.Poruka = poruka;
-            return View();
+            return DateTime.Now.ToString();
         }
+       
     }
 }
