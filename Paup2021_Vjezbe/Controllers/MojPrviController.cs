@@ -31,16 +31,17 @@ namespace Paup2021_Vjezbe.Controllers
 
         public ActionResult Student()
         {
-            ViewBag.Ime = "Ivo";
+            ViewBag.Ime = "Sanja";
             ViewBag.Prezime = "Perić";
             ViewBag.GodinaRodjenja = 1995;
 
             return View();
         }
-        public ActionResult Ne_seri(string poruka)
+        
+        public string VratiVrijeme()
         {
-            ViewBag.Poruka = poruka;
-            return View();
+            return DateTime.Now.ToString();
         }
+       
     }
 }
